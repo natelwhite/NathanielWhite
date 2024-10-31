@@ -18,22 +18,16 @@ nav a {
 
 /* All folders, no files */
 nav .row:not(nav .drop-content .row) {
-  border-top: dashed 1px var(--light-grey);
-  border-bottom: dashed 1px var(--light-grey);
+  border-bottom: solid 1px var(--brown);
 }
 
-/* All files except the last one in the folder */
-nav .drop-content .row:not(nav .drop-content .row:last-of-type) {
-  border-bottom: dashed 1px var(--light-grey);
-}
-
-/* The last file in the last folder */
-nav .drop-content:last-of-type .row {
-  border-bottom: dashed 1px var(--light-grey);
+/* All files, no folders */
+nav .drop-content .row {
+  border-bottom: solid 1px var(--paragraph);
 }
 
 nav .row i {
-  color: var(--light-grey);
+  color: var(--paragraph);
 }
 
 nav .row:hover a {
@@ -105,3 +99,37 @@ main {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+@media screen and (max-width: 1000px) {
+  main {
+    border: none;
+  }
+
+  nav .row {
+    background-color: var(--black);
+  }
+
+  nav .row i {
+    color: var(--brown);
+  }
+
+  nav .drop-content .row {
+    background-color: var(--dark-grey);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav .row {
+    font-size: 14pt;
+  }
+  .pageTitle {
+    font-size: 28pt;
+  }
+
+  .article-hdr {
+    font-size: 18pt;
+  }
+
+  .article-ls, .article-par {
+    font-size: 14pt;
+  }
+}

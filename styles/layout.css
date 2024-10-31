@@ -6,6 +6,8 @@ nav {
 
   width: 20vw;
   top: 30vh;
+  left: 0;
+  overflow: hidden;
 }
 
 nav .drop-content {
@@ -18,14 +20,13 @@ nav .dropped-content {
   display: grid;
 }
 
-nav a {
+nav .row i, nav .row a {
   line-height: 2;
   display: block;
 }
 
 nav .row i {
-  padding: 6px;
-  margin: 2px;
+  margin: 0 8px;
   float: left;
 }
 
@@ -73,5 +74,63 @@ main {
 }
 
 :root {
-  --indent: 48px;
+  --indent: 2vw;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    width: 100vw;
+    margin: 0;
+  }
+
+  nav {
+    position: relative;
+    width: 100%;
+    top: 0;
+  }
+
+  nav .row {
+    border: none !important;
+  }
+
+  nav .row i, nav .row a {
+    line-height: 3;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav .row i {
+    padding: 0 16px;
+  }
+
+  nav .row a {
+    width: 100vw;
+  }
+
+  .article-par, .article-ls {
+    margin: 0;
+    padding: 8px calc(var(--indent) * 4);
+    margin: 0 !important;
+  }
+
+  :root {
+    --indent: 3vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pageTitle, .section-hdr, .article-subhdr, .article-hdr {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .article-ls, .article-par {
+    padding: 8px 32px;
+    margin: 0 !important;
+  }
+
+  :root {
+    --indent: 0;
+  }
 }
