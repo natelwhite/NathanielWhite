@@ -9,7 +9,7 @@ body {
 /* Navigation styling */
 
 nav {
-  background-color: var(--dark-grey);
+  background-color: var(--black);
 }
 
 nav a {
@@ -62,7 +62,7 @@ main {
 .section-hdr {
   font-size: 21pt;
   color: var(--header);
-  background-color: var(--dark-grey);
+  background-color: var(--black);
 }
 
 .article-hdr {
@@ -79,29 +79,33 @@ main {
 
 .article-par, .article-ls {
   color: var(--paragraph);
-  background-color: var(--dark-grey);
+  background-color: var(--black);
+}
+
+.article-ls .fa-check-circle {
+  color: var(--brown);
 }
 
 :root {
   /* Background Colors */
-  --black: #050505;
-  --dark-grey: #111;
+  --black: #111;
   --grey: #222;
 
   /* Use sparingly */
-  --brown: #77473E;
+  --brown: #A9675B;
 
   /* Text Colors */
   --header: #999;
   --subheader: #777;
-  --paragraph: #666;
+  --paragraph: #808080;
 
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media screen and (max-width: 1000px) {
   main {
-    border: none;
+    border-left: none !important;
+    border-right: none !important;
   }
 
   nav .row {
@@ -113,11 +117,16 @@ main {
   }
 
   nav .drop-content .row {
-    background-color: var(--dark-grey);
+    background-color: var(--black);
   }
 }
 
 @media screen and (max-width: 600px) {
+  main {
+    border-left: none !important;
+    border-right: none !important;
+  }
+
   nav .row {
     font-size: 14pt;
   }
