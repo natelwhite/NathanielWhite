@@ -5,7 +5,7 @@ nav {
   grid-auto-flow: row;
 
   width: 20vw;
-  top: 30vh;
+  top: 45vh;
   left: 0;
   overflow: hidden;
 }
@@ -39,6 +39,14 @@ main {
   margin: 64px 20vw;
 }
 
+main .drop-content {
+  display: none;
+}
+
+main .dropped-content {
+  display: block;
+}
+
 .pageTitle {
   margin: 0;
   text-indent: var(--indent);
@@ -51,31 +59,30 @@ main {
 }
 
 .article-hdr {
-  padding: 4px calc(var(--indent) * 3);
   margin: 0;
+  line-height: 2;
+  padding-left: calc(var(--indent) * 3);
 }
 
 .article-subhdr {
-  padding: 4px var(--indent);
-  margin: 16px calc(var(--indent) * 2);
+  margin: 0 0 0 calc(var(--indent) * 2);
+  line-height: 2;
+  padding-left: var(--indent);
 }
 
-.article-par, .article-ls {
-  padding: 8px var(--indent);
+.article-subhdr i {
+  margin-right: 8px;
+  margin-left: -16px;
+}
+
+.article-text {
+  padding: 16px var(--indent);
   margin: 0 calc(var(--indent) * 3);
 }
 
-.article-ls .replace-bullet {
+.replace-bullet {
   margin-left: -2ch;
   margin-right: 1ch;
-}
-
-.article-par:nth-child(2) {
-  margin-top: 16px;
-}
-
-.article-par:last-child, .article-ls:last-child {
-  margin-bottom: 16px;
 }
 
 :root {
@@ -112,7 +119,7 @@ main {
     width: 100vw;
   }
 
-  .article-par, .article-ls {
+  .article-text {
     margin: 0;
     padding: 8px calc(var(--indent) * 4);
     margin: 0 !important;

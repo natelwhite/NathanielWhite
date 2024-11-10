@@ -1,4 +1,4 @@
-function drop(dropper_id, content_id) {
+function navDrop(dropper_id, content_id) {
   // show content
   let content = document.getElementById(content_id);
   content.classList.toggle("dropped-content");
@@ -10,3 +10,21 @@ function drop(dropper_id, content_id) {
   icon.classList.toggle("fa-folder-open");
 }
 
+function mainDrop(dropper_id, content_id) {
+  let content = document.getElementById(content_id);
+  content.classList.toggle("dropped-content");
+
+  // switch icon
+  let dropper = document.getElementById(dropper_id);
+  let icon = dropper.children[0];
+  icon.classList.toggle("fa-caret-right");
+  icon.classList.toggle("fa-caret-down");
+}
+
+function copyEmail() {
+  navigator.clipboard.writeText("natelwhite01@gmail.com")
+}
+
+function copyDiscord() {
+  navigator.clipboard.writeText("")
+}

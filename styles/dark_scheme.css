@@ -35,11 +35,11 @@ nav .row:hover a {
   color: var(--header);
 }
 
-nav .row:hover {
+.dropper {
   cursor: pointer;
 }
 
-nav .row:hover i, nav .row:hover a {
+.dropper:hover, .dropper:hover i, .dropper:hover a {
   color: var(--brown);
 }
 
@@ -51,7 +51,7 @@ main {
   line-height: 1.5;
 }
 
-.article-par a, .article-ls a {
+.article-text a {
   color: var(--brown);
 }
 
@@ -67,8 +67,8 @@ main {
 
 .article-hdr {
   font-size: 14pt;
-  color: var(--subheader);
-  background-color: var(--grey);
+  color: var(--header);
+  background-color: var(--light-grey);
 }
 
 .article-subhdr {
@@ -77,12 +77,12 @@ main {
   background-color: var(--grey);
 }
 
-.article-par, .article-ls {
+.article-text {
   color: var(--paragraph);
   background-color: var(--black);
 }
 
-.article-ls .fa-check-circle {
+.article-text .fa-check-circle {
   color: var(--brown);
 }
 
@@ -90,6 +90,7 @@ main {
   /* Background Colors */
   --black: #111;
   --grey: #222;
+  --light-grey: #333;
 
   /* Use sparingly */
   --brown: #A9675B;
