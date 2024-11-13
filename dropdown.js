@@ -22,9 +22,14 @@ function mainDrop(dropper_id, content_id) {
 }
 
 function copyEmail() {
-  navigator.clipboard.writeText("natelwhite01@gmail.com")
+  navigator.clipboard.writeText("natelwhite01@gmail.com");
+  let popup = document.getElementById("socials-email-popup");
+  popup.classList.toggle("popped");
 }
 
 function copyDiscord() {
-  navigator.clipboard.writeText("")
+  navigator.clipboard.writeText("blackorchard")
+
+  let popup = document.getElementById("socials-discord-popup");
+  popup.classList.toggle("popped");
 }

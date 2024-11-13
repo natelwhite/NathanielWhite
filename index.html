@@ -37,10 +37,6 @@
       <div id="projects-content" class="drop-content">
         <div class="row">
           <i class="fa fa-file"></i>
-          <a href="#game-of-life">game-of-life</a>
-        </div>
-        <div class="row">
-          <i class="fa fa-file"></i>
           <a href="#palette-maker">palette-maker</a>
         </div>
         <div class="row">
@@ -55,15 +51,24 @@
       </div>
       <div id="socials-content" class="drop-content">
         <div class="row">
-          <i class="fa fa-copy"></i>
-          <a onclick="copyEmail()">Email</a>
+          <i class="fa fa-clipboard"></i>
+          <p onclick="copyEmail()">Email</p>
         </div>
         <div class="row">
           <i class="fa fa-clipboard"></i>
-          <a onclick="copyDiscord()">Discord</a>
+          <p onclick="copyDiscord()">Discord</p>
         </div>
       </div>
     </nav>
+
+    <div id="socials-email-popup">
+      <p>Copied natelwhite01@gmail.com to clipboard!</p>
+    </div>
+    <div id="socials-discord-popup">
+      <p>Copied blackorchard to clipboard!</p>
+    </div>
+
+
       <section id="academic-history">
         <h1 class="section-hdr">academic-history/</h1>
 
@@ -111,70 +116,35 @@
 
       <section id="projects">
         <h1 class="section-hdr">projects/</h1>
-
-        <article id="game-of-life">
-          <h1 class="article-hdr">game-of-life/</h1>
+        
+        <article id="palettable">
+          <h1 class="article-hdr">palettable/</h1>
           <h2 class="article-subhdr">showcase</h2>
           <div class="project-showcase">
+            <img src="images/Palettable_0.png"/>
+            <img src="images/Palettable_1.png"/>
+            <img src="images/Palettable_2.png"/>
+            <a target="_blank" href="https://github.com/natelwhite/Palettable">github</a>
           </div>
-          <p class="article-text"><a href="https://github.com/deadlyorchard/conwaysgameoflife">repo</a></p>
-          <h2 class="article-subhdr">build instructions</h2>
-          <h2 class="article-subhdr">project background</h2>
-          <ul class="article-text">
-            <li>i first came across this game when i had discovered python and pygame. i had just started programming, and wanted to see if i could implement it.</li>
-            <li>of course, i failed hilariously, but it was quite the thought experiment!</li>
-            <li>a few days ago, a peer of mine, <a href="***">luke</a> implemented their own in golang using the terminal. so, i thought i'd have a go at it.</li>
-          </ul>
-        </article>
-
-        <article id="fourier-series">
-          <h1 class="article-hdr">fourier-series</h1>
-          <h2 class="article-subhdr">showcase</h2>
-          <div class="project-showcase">
-          </div>
-          <p class="article-text"><a href="https://github.com/DeadlyOrchard/FourierSeries">repo</a></p>
-          <h2 id="fourier-series-build-dropper" class="article-subhdr dropper" onclick="mainDrop('fourier-series-build-dropper', 'fourier-series-build-drop-content')"><i class="fa fa-caret-right"></i>build instructions</h2>
-          <div id="fourier-series-build-drop-content" class="drop-content">
-            <ol class="article-text">
-              <li>Install SDL2 development libraries:</li>
-              <ul>
-                <li>Debian-based systems: sudo apt install libsdl2-2.0-0</li>
-                <li>Red Hat-based systems: sudo dnf install SDL2-devel</li>
-                <li>Windows systems: see this step-by-step <a href="https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php">article</a>.</li>
-              </ul>
-              <li>Clone the repo into a local directory:</li>
-              <ul>
-                <li>git clone https://github.com/natelwhite/FourierSeries.git</li>
-              </ul>
-              <li>Generate the Cmake build system:</li>
-              <ul>
-                <li>cmake -B build</li>
-              </ul>
-              <li>Build the project:</li>
-              <ul>
-                <li>cmake --build build</li>
-              </ul>
-              <li>The FourerierSeries executable should now be in the build directory.</li>
-            </ol>
-          </div>
-          <h2 id="fourier-series-background-dropper" class="article-subhdr dropper" onclick="mainDrop('fourier-series-background-dropper', 'fourier-series-background-drop-content')"><i class="fa fa-caret-right"></i>project background</h2>
-          <div id="fourier-series-background-drop-content" class="drop-content">
+          <h2 id="palettable-background-dropper" class="article-subhdr dropper" onclick="mainDrop('palettable-background-dropper', 'palettable-background-drop-content')"><i class="fa fa-caret-right"></i>project background</h2>
+          <div id="palettable-background-drop-content" class="drop-content">
             <ul class="article-text">
-              <li>After seeing a 3Blue1Brown (YouTube) video on the discrete fourier transform, I wanted to implmement it myself.</li>
+              <li>I've done many iterations of this project. Originally in Python (Tkinter), then in HTML/CSS/JS (no libs), and now in C++ (Dear ImGui). I'm still tinkering with this project in between schoolwork, but I don't plan to work on it for much longer. The only reason I've done this project so many times is because I find it helpful to learn my way around a GUI framework/library.</li>
+              <li>My main interest in Dear ImGui is for a future 2d game engine. Considering the intuitive nature of Object Oriented Programming in a video game context, I tried to built this project with those principals in mind. As for how quickly I was able to learn my way around this library:</li>
               <ul>
-                <li>I followed a CodingTrain (YouTube) video where he implemented a drawing machine in javascript using the algorithm.</li>
-                <li>I didn't want it to be too easy though, so I opted to use C++ and SDL2, much lower-level than javascript.</li>
+                <li>A few hours to build the demo project that comes in the Dear ImGui <a href="***">repo</a>.</li>
+                <li>A day to build the functional requirements of the app:
+                  <ul>
+                    <li>display colors,</li>
+                    <li>assign displayed number of rows/columns,</li>
+                    <li>and edit colors).</li>
+                  </ul>
+                <li>A day to separate the App, Palette, and Color components of the logic.</li>
               </ul>
+              <li>Ultimately, I do not have the time nor capability of building a 2d engine without the aid of a more advanced library such as raylib. Regardless, I recognize that I'll never build one if I don't start poking around different libraries to see how they could be used for game engine development. </li>
+              <li>I appreciate the simplicity of Dear ImGui. I'm sure there are much more advanced things you can do with it, but it really is simple to get a window going and start adding widgets. The one qualm I have is the lack of a layout manager. I tried to use the docking branch of the repo, but I found it to be much more convoluted than I feel it should be. </li>
             </ul>
           </div>
-        </article>
-
-        <article id="palettable">
-          <h1 class="article-hdr">palettable</h1>
-          <h2 class="article-subhdr">showcase</h2>
-          <div class="project-showcase">
-          </div>
-          <p class="article-text"><a href="">repo</a></p>
           <h2 id="palettable-build-dropper" class="article-subhdr dropper" onclick="mainDrop('palettable-build-dropper', 'palettable-build-drop-content')"><i class="fa fa-caret-right"></i>build instructions</h2>
           <div id="palettable-build-drop-content" class="drop-content">
             <ol class="article-text">
@@ -199,24 +169,50 @@
               <li>The Palettable executable should now be in the build directory.</li>
             </ol>
           </div>
-          <h2 id="palettable-background-dropper" class="article-subhdr dropper" onclick="mainDrop('palettable-background-dropper', 'palettable-background-drop-content')"><i class="fa fa-caret-right"></i>project background</h2>
-          <div id="palettable-background-drop-content" class="drop-content">
+        </article>
+
+        <article id="fourier-series">
+          <h1 class="article-hdr">fourier-series/</h1>
+          <h2 class="article-subhdr">showcase</h2>
+          <div class="project-showcase">
+            <img src="images/FourierSeries_0.png"/>
+            <img src="images/FourierSeries_1.png"/>
+            <img src="images/FourierSeries_2.png"/>
+            <a target="_blank" href="https://github.com/DeadlyOrchard/FourierSeries">github</a>
+          </div>
+          <h2 id="fourier-series-background-dropper" class="article-subhdr dropper" onclick="mainDrop('fourier-series-background-dropper', 'fourier-series-background-drop-content')"><i class="fa fa-caret-right"></i>project background</h2>
+          <div id="fourier-series-background-drop-content" class="drop-content">
             <ul class="article-text">
-              <li>I've done many iterations of this project. Originally in Python (Tkinter), then in HTML/CSS/JS (no libs), and now in C++ (Dear ImGui). I'm still tinkering with this project in between schoolwork, but I don't plan to work on it for much longer. The only reason I've done this project so many times is because I find it helpful to learn my way around a GUI framework/library.</li>
-              <li>My main interest in Dear ImGui is for a future 2d game engine. Considering the intuitive nature of Object Oriented Programming in a video game context, I tried to built this project with those principals in mind. As for how quickly I was able to learn my way around this library:</li>
+              <li>After seeing a 3Blue1Brown (YouTube) video on the discrete fourier transform, I wanted to implmement it myself.</li>
               <ul>
-                <li>A few hours to build the demo project that comes in the Dear ImGui <a href="***">repo</a>.</li>
-                <li>A day to build the functional requirements of the app:
-                  <ul>
-                    <li>display colors,</li>
-                    <li>assign displayed number of rows/columns,</li>
-                    <li>and edit colors).</li>
-                  </ul>
-                <li>A day to separate the App, Palette, and Color components of the logic.</li>
+                <li>I followed a CodingTrain (YouTube) video where he implemented a drawing machine in javascript using the algorithm.</li>
+                <li>I didn't want it to be too easy though, so I opted to use C++ and SDL2, much lower-level than javascript.</li>
               </ul>
-              <li>Ultimately, I do not have the time nor capability of building a 2d engine without the aid of a more advanced library such as raylib. Regardless, I recognize that I'll never build one if I don't start poking around different libraries to see how they could be used for game engine development. </li>
-              <li>I appreciate the simplicity of Dear ImGui. I'm sure there are much more advanced things you can do with it, but it really is simple to get a window going and start adding widgets. The one qualm I have is the lack of a layout manager. I tried to use the docking branch of the repo, but I found it to be much more convoluted than I feel it should be. </li>
             </ul>
+          </div>
+          <h2 id="fourier-series-build-dropper" class="article-subhdr dropper" onclick="mainDrop('fourier-series-build-dropper', 'fourier-series-build-drop-content')"><i class="fa fa-caret-right"></i>build instructions</h2>
+          <div id="fourier-series-build-drop-content" class="drop-content">
+            <ol class="article-text">
+              <li>Install SDL2 development libraries:</li>
+              <ul>
+                <li>Debian-based systems: sudo apt install libsdl2-2.0-0</li>
+                <li>Red Hat-based systems: sudo dnf install SDL2-devel</li>
+                <li>Windows systems: see this step-by-step <a href="https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php">article</a>.</li>
+              </ul>
+              <li>Clone the repo into a local directory:</li>
+              <ul>
+                <li>git clone https://github.com/natelwhite/FourierSeries.git</li>
+              </ul>
+              <li>Generate the Cmake build system:</li>
+              <ul>
+                <li>cmake -B build</li>
+              </ul>
+              <li>Build the project:</li>
+              <ul>
+                <li>cmake --build build</li>
+              </ul>
+              <li>The FourerierSeries executable should now be in the build directory.</li>
+            </ol>
           </div>
         </article>
       </section>

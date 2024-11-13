@@ -20,14 +20,47 @@ nav .dropped-content {
   display: grid;
 }
 
-nav .row i, nav .row a {
+nav .row i, nav .row a, nav .row p {
   line-height: 2;
   display: block;
+  margin: 0;
+  padding: 0;
 }
 
 nav .row i {
   margin: 0 8px;
   float: left;
+}
+
+#socials-email-popup, #socials-discord-popup {
+  position: fixed;
+  left: 8px;
+  width: calc(20vw - 16px);
+  display: none;
+}
+
+.popped {
+  display: block !important;
+  animation: popup 3s forwards ease-out;
+}
+
+#socials-email-popup p, #socials-discord-popup p {
+  margin: 8px;
+}
+
+@keyframes popup {
+  0% {
+    bottom: -56px;
+  }
+  10% {
+    bottom: 8px;
+  }
+  90% {
+    bottom: 8px;
+  }
+  100% {
+    bottom: -56px;
+  }
 }
 
 body {
@@ -45,6 +78,28 @@ main .drop-content {
 
 main .dropped-content {
   display: block;
+}
+
+.project-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 16px calc(var(--indent) * 2) 16px calc(var(--indent) * 2);
+  column-gap: 12px;
+  row-gap: 8px;
+  place-content: center;
+}
+
+.project-showcase img {
+  max-width: 100%;
+}
+
+.project-showcase a {
+  grid-column: 2;
+  text-align: center;
+}
+
+.project-showcase a {
+  width: 100%;
 }
 
 .pageTitle {
@@ -76,8 +131,8 @@ main .dropped-content {
 }
 
 .article-text {
-  padding: 16px var(--indent);
-  margin: 0 calc(var(--indent) * 3);
+  padding: 0 var(--indent);
+  margin: 16px calc(var(--indent) * 3);
 }
 
 .replace-bullet {

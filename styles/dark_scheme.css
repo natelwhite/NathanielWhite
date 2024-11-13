@@ -12,13 +12,14 @@ nav {
   background-color: var(--black);
 }
 
-nav a {
+nav a, nav p {
   color: var(--paragraph);
+  text-decoration: none;
 }
 
 /* All folders, no files */
 nav .row:not(nav .drop-content .row) {
-  border-bottom: solid 1px var(--brown);
+  border-bottom: solid 1px var(--orange);
 }
 
 /* All files, no folders */
@@ -30,33 +31,50 @@ nav .row i {
   color: var(--paragraph);
 }
 
-nav .row:hover a {
+nav .row:hover a, nav .row:hover p {
   background-color: var(--grey);
   color: var(--header);
-}
-
-.dropper {
   cursor: pointer;
 }
 
-.dropper:hover, .dropper:hover i, .dropper:hover a {
-  color: var(--brown);
+nav .row:hover i {
+  color: var(--orange);
+}
+
+#socials-email-popup, #socials-discord-popup {
+  background-color: var(--grey);
+  color: var(--orange);
+}
+
+.dropper:hover, .dropper:hover i {
+  color: var(--orange);
+  cursor: pointer;
 }
 
 /* Main content */
 
 main {
-  border-right: var(--brown) 2px solid;
-  border-left: var(--brown) 2px solid;
+  border-right: var(--orange) 2px solid;
+  border-left: var(--orange) 2px solid;
   line-height: 1.5;
 }
 
+.project-showcase a {
+  background-color: var(--grey);
+  line-height: 2;
+  color: var(--orange);
+}
+
+.project-showcase a:hover {
+  background-color: var(--light-grey);
+}
+
 .article-text a {
-  color: var(--brown);
+  color: var(--orange);
 }
 
 .pageTitle {
-  color: var(--brown);
+  color: var(--orange);
 }
 
 .section-hdr {
@@ -83,7 +101,7 @@ main {
 }
 
 .article-text .fa-check-circle {
-  color: var(--brown);
+  color: var(--orange);
 }
 
 :root {
@@ -93,7 +111,7 @@ main {
   --light-grey: #333;
 
   /* Use sparingly */
-  --brown: #A9675B;
+  --orange: #A9675B;
 
   /* Text Colors */
   --header: #999;
@@ -114,7 +132,7 @@ main {
   }
 
   nav .row i {
-    color: var(--brown);
+    color: var(--orange);
   }
 
   nav .drop-content .row {
