@@ -121,7 +121,7 @@ main {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   main {
     border-left: none !important;
     border-right: none !important;
@@ -157,7 +157,7 @@ main {
     font-size: 18pt;
   }
 
-  .article-ls, .article-par {
+  .article-text {
     font-size: 14pt;
   }
 }
