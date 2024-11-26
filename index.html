@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A software engineering portfolio">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NathanielWhite</title>
+    <title>Nathaniel White</title>
     <link rel="stylesheet" href="./styles/layout.css">
     <link rel="stylesheet" href="./styles/dark_scheme.css">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
@@ -41,7 +42,7 @@
         </div>
         <div class="row">
           <i class="fa fa-file"></i>
-          <a href="#fourier-series">fourier-series</a>
+          <a href="#draw-machine">draw-machine</a>
         </div>
       </div>
 
@@ -171,27 +172,35 @@
           </div>
         </article>
 
-        <article id="fourier-series">
-          <h1 class="article-hdr">fourier-series/</h1>
+        <article id="draw-machine">
+          <h1 class="article-hdr">draw-machine/</h1>
           <h2 class="article-subhdr">showcase</h2>
           <div class="project-showcase">
-            <img src="images/FourierSeries_0.png"/>
-            <img src="images/FourierSeries_1.png"/>
-            <img src="images/FourierSeries_2.png"/>
-            <a target="_blank" href="https://github.com/DeadlyOrchard/FourierSeries">github</a>
+            <img src="images/DrawMachine_0.png"/>
+            <img src="images/DrawMachine_1.png"/>
+            <img src="images/DrawMachine_2.png"/>
+            <a target="_blank" href="https://github.com/natelwhite/DrawMachine">github</a>
           </div>
-          <h2 id="fourier-series-background-dropper" class="article-subhdr dropper" onclick="mainDrop('fourier-series-background-dropper', 'fourier-series-background-drop-content')"><i class="fa fa-caret-right"></i>project background</h2>
-          <div id="fourier-series-background-drop-content" class="drop-content">
+          <h2 id="draw-machine-background-dropper" class="article-subhdr dropper" onclick="mainDrop('draw-machine-background-dropper', 'draw-machine-background-drop-content')"><i class="fa fa-caret-right"></i>project background</h2>
+          <div id="draw-machine-background-drop-content" class="drop-content">
             <ul class="article-text">
               <li>After seeing a 3Blue1Brown (YouTube) video on the discrete fourier transform, I wanted to implmement it myself.</li>
               <ul>
                 <li>I followed a CodingTrain (YouTube) video where he implemented a drawing machine in javascript using the algorithm.</li>
                 <li>I didn't want it to be too easy though, so I opted to use C++ and SDL2, much lower-level than javascript.</li>
+                <li>Here's some functionality I added that wasn't in the original</li>
+                <ol>
+                  <li>Move to a specified frame.</li>
+                  <li>Draw polygons with any number of sides rather than circles.</li>
+                  <li>Change color of lines, polygons, and background.</li>
+                  <li>Start/Stop animation at any time.</li>
+                  <li>Clear drawn path at any time.</li>
+                </ol>
               </ul>
             </ul>
           </div>
-          <h2 id="fourier-series-build-dropper" class="article-subhdr dropper" onclick="mainDrop('fourier-series-build-dropper', 'fourier-series-build-drop-content')"><i class="fa fa-caret-right"></i>build instructions</h2>
-          <div id="fourier-series-build-drop-content" class="drop-content">
+          <h2 id="draw-machine-build-dropper" class="article-subhdr dropper" onclick="mainDrop('draw-machine-build-dropper', 'draw-machine-build-drop-content')"><i class="fa fa-caret-right"></i>build instructions</h2>
+          <div id="draw-machine-build-drop-content" class="drop-content">
             <ol class="article-text">
               <li>Install SDL2 development libraries:</li>
               <ul>
@@ -201,7 +210,7 @@
               </ul>
               <li>Clone the repo into a local directory:</li>
               <ul>
-                <li>git clone https://github.com/natelwhite/FourierSeries.git</li>
+                <li>git clone https://github.com/natelwhite/DrawMachine.git</li>
               </ul>
               <li>Generate the Cmake build system:</li>
               <ul>
@@ -211,7 +220,7 @@
               <ul>
                 <li>cmake --build build</li>
               </ul>
-              <li>The FourerierSeries executable should now be in the build directory.</li>
+              <li>The DrawMachine executable should now be in the build directory.</li>
             </ol>
           </div>
         </article>
