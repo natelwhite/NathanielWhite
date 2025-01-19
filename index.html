@@ -82,7 +82,7 @@
 
         <article id="southern-new-hampshire-university">
           <h1 class="article-hdr">southern-new-hampshire-university/</h1>
-          <p class="article-text">I currently attend SNHU pursuing a Computer Science Bachelor's with a software engineering concentration. At the time of writing (11/3/24), my current GPA is 3.582. I am projected to graduate within a year and a half.</p>
+          <p class="article-text">I currently attend SNHU pursuing a Computer Science Bachelor's with a concentration in project management. At the time of writing (01/07/25), my current GPA is 3.571. I am projected to graduate within a year and a half.</p>
           <h2 class="article-subhdr">Course Completion</h2>
           <ul class="article-text">
             <li>Software:</li>
@@ -93,7 +93,8 @@
               <li><i class="fa fa-check-circle replace-bullet"></i>Data Structures and Algorithms - CS218</li>
               <li><i class="fa fa-check-circle replace-bullet"></i>Introduction to Database Environments - DAD220</li>
               <li><i class="fa fa-check-circle replace-bullet"></i>Operating Platforms - CS230</li>
-              <li><i class="fa fa-spinner replace-bullet"></i>System Analysis and Design - CS255</li>
+              <li><i class="fa fa-check-circle replace-bullet"></i>System Analysis and Design - CS255</li>
+              <li><i class="fa fa-spinner replace-bullet"></i>DSA: Analysis and Design - CS300</li>
               <li><i class="fa fa-times-circle replace-bullet"></i>Software Development Lifecycle - CS250</li>
               <li><i class="fa fa-times-circle replace-bullet"></i>Software Security - CS305</li>
               <li><i class="fa fa-times-circle replace-bullet"></i>Software Test, Automation and Quality Assurance - CS320</li>
@@ -103,13 +104,20 @@
               <li><i class="fa fa-times-circle replace-bullet"></i>Current/Emerging Trends in CS - CS370</li>
               <li><i class="fa fa-times-circle replace-bullet"></i>Full Stack Development 1 - CS465</li>
             </ul>
+            <li>Project Management</li>
+            <ul>
+              <li><i class="fa fa-check-circle replace-bullet"></i>Managiing and Leading in Business - BUS210</li>
+              <li><i class="fa fa-spinner replace-bullet"></i>Project Mangement - QSO340</li>
+              <li><i class="fa fa-times-circle replace-bullet"></i>Resource Estimate and Schedule - QSO355</li>
+              <li><i class="fa fa-times-circle replace-bullet"></i>Topics in Project Management - QSO440</li>
+            </ul>
             <li>Math:</li>
             <ul style="list-style-type: none;">
               <li><i class="fa fa-check-circle replace-bullet"></i>Discrete Mathematic - MAT230</li>
               <li><i class="fa fa-check-circle replace-bullet"></i>Precalculus with Limits - MAT140</li>
               <li><i class="fa fa-check-circle replace-bullet"></i>Calculus 1: Single-Variable Calculus - MAT225</li>
               <li><i class="fa fa-check-circle replace-bullet"></i>Applied Statistics for STEM - MAT243</li>
-              <li><i class="fa fa-spinner replace-bullet"></i>Applied Linear Algebra - MAT350</li>
+              <li><i class="fa fa-check-circle replace-bullet"></i>Applied Linear Algebra - MAT350</li>
             </ul>
           </ul>
         </article>
@@ -151,9 +159,10 @@
             <ol class="article-text">
               <li>Install SDL2 development libraries:</li>
               <ul>
-                <li>Debian-based systems: sudo apt install libsdl2-2.0-0</li>
-                <li>Red Hat-based systems: sudo dnf install SDL2-devel</li>
                 <li>Windows systems: see this step-by-step <a href="https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php">article</a>.</li>
+                <li>sudo apt install libsdl2-2.0-0</li>
+                <li>sudo dnf install SDL2-devel</li>
+                <li>sudo pac -S sdl2</li>
               </ul>
               <li>Clone the repo into a local directory:</li>
               <ul>
@@ -177,7 +186,7 @@
           <h2 class="article-subhdr">showcase</h2>
           <div class="project-showcase">
             <img src="images/DrawMachine_0.png"/>
-            <img src="images/DrawMachine_1.png"/>
+            <img src="images/DrawMachine_1.gif"/>
             <img src="images/DrawMachine_2.png"/>
             <a target="_blank" href="https://github.com/natelwhite/DrawMachine">github</a>
           </div>
@@ -190,6 +199,7 @@
                 <li>I didn't want it to be too easy though, so I opted to use C++ and SDL2, much lower-level than javascript.</li>
                 <li>Here's some functionality I added that wasn't in the original</li>
                 <ol>
+                  <li>A single fourier series draws both x and y dimensions, rather than one for each axis.</li>
                   <li>Move to a specified frame.</li>
                   <li>Draw polygons with any number of sides rather than circles.</li>
                   <li>Change color of lines, polygons, and background.</li>
@@ -204,9 +214,10 @@
             <ol class="article-text">
               <li>Install SDL2 development libraries:</li>
               <ul>
-                <li>Debian-based systems: sudo apt install libsdl2-2.0-0</li>
-                <li>Red Hat-based systems: sudo dnf install SDL2-devel</li>
                 <li>Windows systems: see this step-by-step <a href="https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php">article</a>.</li>
+                <li>sudo apt install libsdl2-2.0-0</li>
+                <li>sudo dnf install SDL2-devel</li>
+                <li>sudo pac -S sdl2</li>
               </ul>
               <li>Clone the repo into a local directory:</li>
               <ul>
