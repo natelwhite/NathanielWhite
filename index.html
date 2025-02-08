@@ -1,276 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A software engineering portfolio">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nathaniel White</title>
-    <link rel="stylesheet" href="./styles/layout.css">
-    <link rel="stylesheet" href="./styles/dark_scheme.css">
-    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <script src="script.js"></script>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A software engineering portfolio">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Nathaniel White</title>
+	<link rel="stylesheet" href="./styles/layout.css">
+	<link rel="stylesheet" href="./styles/dark_scheme.css">
+	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<script src="script.js"></script>
 
-    <nav>
-      <div class="row dropper" id="academic-history-dropper">
-        <i class="fa fa-folder"></i>
-        <a onclick="navDrop('academic-history-dropper', 'academic-history-content')">academic-history</a>
-      </div>
-      <div id="academic-history-content" class="drop-content">
-        <div class="row">
-          <i class="fa fa-file"></i>
-          <a href="#missouri-state-university">missouri-state-university</a>
-        </div>
-        <div class="row">
-          <i class="fa fa-file"></i>
-          <a href="#southern-new-hampshire-university">southern-newhampsire-university</a>
-        </div>
-      </div>
+		<nav>
+			<div class="row dropper" id="academic-history-dropper">
+				<i class="fa fa-folder"></i>
+				<a onclick="navDrop('academic-history-dropper', 'academic-history-content')">academic-history</a> </div>
+			<div id="academic-history-content" class="drop-content">
+				<div class="row">
+					<i class="fa fa-file"></i>
+					<a href="#missouri-state-university">missouri-state-university</a>
+				</div>
+				<div class="row">
+					<i class="fa fa-file"></i>
+					<a href="#southern-new-hampshire-university">southern-newhampsire-university</a>
+				</div>
+			</div>
 
-      <div class="row dropper" id="projects-dropper">
-        <i class="fa fa-folder"></i>
-        <a onclick="navDrop('projects-dropper', 'projects-content')">projects</a>
-      </div>
-      <div id="projects-content" class="drop-content">
-        <div class="row">
-          <i class="fa fa-file"></i>
-          <a href="#palettable">palettable</a>
-        </div>
-        <div class="row">
-          <i class="fa fa-file"></i>
-          <a href="#draw-machine">draw-machine</a>
-        </div>
-        <div class="row">
-          <i class="fa fa-file"></i>
-          <a href="#hellebore">hellebore</a>
-        </div>
-      </div>
+			<div class="row dropper" id="projects-dropper">
+				<i class="fa fa-folder"></i>
+				<a onclick="navDrop('projects-dropper', 'projects-content')">projects</a>
+			</div>
+			<div id="projects-content" class="drop-content">
+				<div class="row">
+					<i class="fa fa-file"></i>
+					<a href="#palettable">palettable</a>
+				</div>
+				<div class="row">
+					<i class="fa fa-file"></i>
+					<a href="#draw-machine">draw-machine</a>
+				</div>
+				<div class="row">
+					<i class="fa fa-file"></i>
+					<a href="#hellebore">hellebore</a>
+				</div>
+			</div>
 
-      <div class="row dropper" id="socials-dropper">
-        <i class="fa fa-folder"></i>
-        <a onclick="navDrop('socials-dropper', 'socials-content')">socials</a>
-      </div>
-      <div id="socials-content" class="drop-content">
-        <div class="row">
-          <i class="fa fa-clipboard"></i>
-          <p onclick="copyEmail()">Email</p>
-        </div>
-        <div class="row">
-          <i class="fa fa-clipboard"></i>
-          <p onclick="copyDiscord()">Discord</p>
-        </div>
-      </div>
-    </nav>
+			<div class="row dropper" id="socials-dropper">
+				<i class="fa fa-folder"></i>
+				<a onclick="navDrop('socials-dropper', 'socials-content')">socials</a>
+			</div>
+			<div id="socials-content" class="drop-content">
+				<div class="row">
+					<i class="fa fa-clipboard"></i>
+					<p onclick="copyEmail()">Email</p>
+				</div>
+				<div class="row">
+					<i class="fa fa-clipboard"></i>
+					<p onclick="copyDiscord()">Discord</p>
+				</div>
+			</div>
+		</nav>
 
-    <main>
-    <h1 class="pageTitle">./NathanielWhite/</h1>
+		<main>
+			<h1 class="pageTitle">./NathanielWhite/</h1>
 
-    <div id="socials-email-popup">
-      <p>Copied natelwhite01@gmail.com to clipboard!</p>
-    </div>
-    <div id="socials-discord-popup">
-      <p>Copied blackorchard to clipboard!</p>
-    </div>
+			<div id="socials-email-popup">
+				<p>Copied natelwhite01@gmail.com to clipboard!</p>
+			</div>
+			<div id="socials-discord-popup">
+				<p>Copied blackorchard to clipboard!</p>
+			</div>
 
+			<section id="academic-history">
+				<h1 class="section-hdr">academic-history/</h1>
 
-      <section id="academic-history">
-        <h1 class="section-hdr">academic-history/</h1>
+				<article id="missouri-state-university">
+					<h1 class="article-hdr">missouri-state-university/</h1>
+					<p class="article-text">I attended MSU for two and a half years. Most of that time was spent on a music education degree with tuba as my primary instrument. While I didn't finish the degree, most of my first two years were spent on music courses, rather than general education requirements (ask my advisor, I still don't know why). In those courses, I learned how to play trumpet, french horn, baritone, and piano as well as how to use music theory to play sheet music more effectively. In summer 2021, I traveled to over ten states performing the Troopers Drum and Bugle Corps - check out this <a target="_blank" href="https://www.youtube.com/watch?v=HBmj38G8E9o">video</a>!</p>
+					<p class="article-text">After the revelation that performing arts are not for me (performance anxiety), I changed to a bachelor's in computer science. My time at this university post major change was short lived due to all the challenges that Covid brought to the school. By fall of 2022, I moved on to Southern New Hampshire University.</p>
+					<p class="article-text">I have many great memories from this institution. Playing in massive performance halls, hearing the most inspiring melodies. Truly, words do not suffice.</p>
+				</article>
 
-        <article id="missouri-state-university">
-          <h1 class="article-hdr">missouri-state-university/</h1>
-          <p class="article-text">I attended MSU for two and a half years. Most of that time was spent on a music education degree with tuba as my primary instrument. While I didn't finish the degree, most of my first two years were spent on music courses, rather than general education requirements (ask my advisor, I still don't know why). In those courses, I learned how to play trumpet, french horn, baritone, and piano as well as how to use music theory to play sheet music more effectively. In summer 2021, I traveled to over ten states performing the Troopers Drum and Bugle Corps - check out this <a target="_blank" href="https://www.youtube.com/watch?v=HBmj38G8E9o">video</a>!</p>
-          <p class="article-text">After the revelation that performing arts are not for me (performance anxiety), I changed to a bachelor's in computer science. My time at this university post major change was short lived due to all the challenges that Covid brought to the school. By fall of 2022, I moved on to Southern New Hampshire University.</p>
-          <p class="article-text">I have many great memories from this institution. Playing in massive performance halls, hearing the most inspiring melodies. Truly, words do not suffice.</p>
-        </article>
+				<article id="southern-new-hampshire-university">
+					<h1 class="article-hdr">southern-new-hampshire-university/</h1>
+					<p class="article-text">I currently attend SNHU pursuing a Computer Science Bachelor's with a concentration in project management. At the time of writing (01/07/25), my current GPA is 3.571. I am projected to graduate within a year and a half.</p>
+					<h2 class="article-subhdr">Course Completion</h2>
+					<ul class="article-text">
+						<li>Software:</li>
+						<ul style="list-style-type: none;">
+							<li><i class="fa fa-check-circle replace-bullet"></i>Introduction to Scripting - IT140</li>
+							<li><i class="fa fa-check-circle replace-bullet"></i>Foundations in Application development - IT145</li>
+							<li><i class="fa fa-check-circle replace-bullet"></i>Programming Languages - CS210</li>
+							<li><i class="fa fa-check-circle replace-bullet"></i>Data Structures and Algorithms - CS218</li>
+							<li><i class="fa fa-check-circle replace-bullet"></i>Introduction to Database Environments - DAD220</li>
+							<li><i class="fa fa-check-circle replace-bullet"></i>Operating Platforms - CS230</li>
+							<li><i class="fa fa-check-circle replace-bullet"></i>System Analysis and Design - CS255</li>
+							<li><i class="fa fa-spinner replace-bullet"></i>DSA: Analysis and Design - CS300</li>
+							<li><i class="fa fa-times-circle replace-bullet"></i>Software Development Lifecycle - CS250</li>
+							<li><i class="fa fa-times-circle replace-bullet"></i>Software Security - CS305</li>
+							<li><i class="fa fa-times-circle replace-bullet"></i>Software Test, Automation and Quality Assurance - CS320</li>
+							<li><i class="fa fa-times-circle replace-bullet"></i>Computational Graphics and Visualization - CS330</li>
+							<li><i class="fa fa-times-circle replace-bullet"></i>Client/Server Development - CS340</li>
+							<li><i class="fa fa-times-circle replace-bullet"></i>Mobile Architecture & Programming - CS360</li>
+							<li><i class="fa fa-times-circle replace-bullet"></i>Current/Emerging Trends in CS - CS370</li>
+							<li><i class="fa fa-times-circle replace-bullet"></i>Full Stack Development 1 - CS465</li>
+						</ul>
+						<li>Project Management</li>
+						<ul>
+							<li><i class="fa fa-check-circle replace-bullet"></i>Managiing and Leading in Business - BUS210</li>
+							<li><i class="fa fa-spinner replace-bullet"></i>Project Mangement - QSO340</li>
+							<li><i class="fa fa-times-circle replace-bullet"></i>Resource Estimate and Schedule - QSO355</li>
+							<li><i class="fa fa-times-circle replace-bullet"></i>Topics in Project Management - QSO440</li>
+						</ul>
+						<li>Math:</li>
+						<ul style="list-style-type: none;">
+							<li><i class="fa fa-check-circle replace-bullet"></i>Discrete Mathematic - MAT230</li>
+							<li><i class="fa fa-check-circle replace-bullet"></i>Precalculus with Limits - MAT140</li>
+							<li><i class="fa fa-check-circle replace-bullet"></i>Calculus 1: Single-Variable Calculus - MAT225</li>
+							<li><i class="fa fa-check-circle replace-bullet"></i>Applied Statistics for STEM - MAT243</li>
+							<li><i class="fa fa-check-circle replace-bullet"></i>Applied Linear Algebra - MAT350</li>
+						</ul>
+					</ul>
+				</article>
+			</section>
 
-        <article id="southern-new-hampshire-university">
-          <h1 class="article-hdr">southern-new-hampshire-university/</h1>
-          <p class="article-text">I currently attend SNHU pursuing a Computer Science Bachelor's with a concentration in project management. At the time of writing (01/07/25), my current GPA is 3.571. I am projected to graduate within a year and a half.</p>
-          <h2 class="article-subhdr">Course Completion</h2>
-          <ul class="article-text">
-            <li>Software:</li>
-            <ul style="list-style-type: none;">
-              <li><i class="fa fa-check-circle replace-bullet"></i>Introduction to Scripting - IT140</li>
-              <li><i class="fa fa-check-circle replace-bullet"></i>Foundations in Application development - IT145</li>
-              <li><i class="fa fa-check-circle replace-bullet"></i>Programming Languages - CS210</li>
-              <li><i class="fa fa-check-circle replace-bullet"></i>Data Structures and Algorithms - CS218</li>
-              <li><i class="fa fa-check-circle replace-bullet"></i>Introduction to Database Environments - DAD220</li>
-              <li><i class="fa fa-check-circle replace-bullet"></i>Operating Platforms - CS230</li>
-              <li><i class="fa fa-check-circle replace-bullet"></i>System Analysis and Design - CS255</li>
-              <li><i class="fa fa-spinner replace-bullet"></i>DSA: Analysis and Design - CS300</li>
-              <li><i class="fa fa-times-circle replace-bullet"></i>Software Development Lifecycle - CS250</li>
-              <li><i class="fa fa-times-circle replace-bullet"></i>Software Security - CS305</li>
-              <li><i class="fa fa-times-circle replace-bullet"></i>Software Test, Automation and Quality Assurance - CS320</li>
-              <li><i class="fa fa-times-circle replace-bullet"></i>Computational Graphics and Visualization - CS330</li>
-              <li><i class="fa fa-times-circle replace-bullet"></i>Client/Server Development - CS340</li>
-              <li><i class="fa fa-times-circle replace-bullet"></i>Mobile Architecture & Programming - CS360</li>
-              <li><i class="fa fa-times-circle replace-bullet"></i>Current/Emerging Trends in CS - CS370</li>
-              <li><i class="fa fa-times-circle replace-bullet"></i>Full Stack Development 1 - CS465</li>
-            </ul>
-            <li>Project Management</li>
-            <ul>
-              <li><i class="fa fa-check-circle replace-bullet"></i>Managiing and Leading in Business - BUS210</li>
-              <li><i class="fa fa-spinner replace-bullet"></i>Project Mangement - QSO340</li>
-              <li><i class="fa fa-times-circle replace-bullet"></i>Resource Estimate and Schedule - QSO355</li>
-              <li><i class="fa fa-times-circle replace-bullet"></i>Topics in Project Management - QSO440</li>
-            </ul>
-            <li>Math:</li>
-            <ul style="list-style-type: none;">
-              <li><i class="fa fa-check-circle replace-bullet"></i>Discrete Mathematic - MAT230</li>
-              <li><i class="fa fa-check-circle replace-bullet"></i>Precalculus with Limits - MAT140</li>
-              <li><i class="fa fa-check-circle replace-bullet"></i>Calculus 1: Single-Variable Calculus - MAT225</li>
-              <li><i class="fa fa-check-circle replace-bullet"></i>Applied Statistics for STEM - MAT243</li>
-              <li><i class="fa fa-check-circle replace-bullet"></i>Applied Linear Algebra - MAT350</li>
-            </ul>
-          </ul>
-        </article>
-      </section>
+			<section id="projects">
+				<h1 class="section-hdr">projects/</h1>
 
-      <section id="projects">
-        <h1 class="section-hdr">projects/</h1>
-        
-        <article id="palettable">
-          <h1 class="article-hdr">palettable/</h1>
-          <h2 class="article-subhdr">showcase</h2>
-          <div class="project-showcase">
-            <img src="images/Palettable_0.png"/>
-            <img src="images/Palettable_1.png"/>
-            <img src="images/Palettable_2.png"/>
-            <a target="_blank" href="https://github.com/natelwhite/Palettable">github</a>
-          </div>
-          <h2 id="palettable-background-dropper" class="article-subhdr dropper" onclick="mainDrop('palettable-background-dropper', 'palettable-background-drop-content')"><i class="fa fa-caret-right"></i>project background</h2>
-          <div id="palettable-background-drop-content" class="drop-content">
-            <ul class="article-text">
-              <li>I've done many iterations of this project. Originally in Python (Tkinter), then in HTML/CSS/JS (no libs), and now in C++ (Dear ImGui). I'm still tinkering with this project in between schoolwork, but I don't plan to work on it for much longer. The only reason I've done this project so many times is because I find it helpful to learn my way around a GUI framework/library.</li>
-              <li>My main interest in Dear ImGui is for a future 2d game engine. Considering the intuitive nature of Object Oriented Programming in a video game context, I tried to built this project with those principals in mind. As for how quickly I was able to learn my way around this library:</li>
-              <ul>
-                <li>A few hours to build the demo project that comes in the Dear ImGui <a href="***">repo</a>.</li>
-                <li>A day to build the functional requirements of the app:
-                  <ul>
-                    <li>display colors,</li>
-                    <li>assign displayed number of rows/columns,</li>
-                    <li>and edit colors).</li>
-                  </ul>
-                <li>A day to separate the App, Palette, and Color components of the logic.</li>
-              </ul>
-              <li>Ultimately, I do not have the time nor capability of building a 2d engine without the aid of a more advanced library such as raylib. Regardless, I recognize that I'll never build one if I don't start poking around different libraries to see how they could be used for game engine development. </li>
-              <li>I appreciate the simplicity of Dear ImGui. I'm sure there are much more advanced things you can do with it, but it really is simple to get a window going and start adding widgets. The one qualm I have is the lack of a layout manager. I tried to use the docking branch of the repo, but I found it to be much more convoluted than I feel it should be. </li>
-            </ul>
-          </div>
-          <h2 id="palettable-build-dropper" class="article-subhdr dropper" onclick="mainDrop('palettable-build-dropper', 'palettable-build-drop-content')"><i class="fa fa-caret-right"></i>build instructions</h2>
-          <div id="palettable-build-drop-content" class="drop-content">
-            <ol class="article-text">
-              <li>Install SDL2 development libraries:</li>
-              <ul>
-                <li>Windows systems: see this step-by-step <a href="https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php">article</a>.</li>
-                <li>sudo apt install libsdl2-2.0-0</li>
-                <li>sudo dnf install SDL2-devel</li>
-                <li>sudo pac -S sdl2</li>
-              </ul>
-              <li>Clone the repo into a local directory:</li>
-              <ul>
-                <li>git clone https://github.com/natelwhite/Palettable.git</li>
-              </ul>
-              <li>Generate the Cmake build system:</li>
-              <ul>
-                <li>cmake -B build</li>
-              </ul>
-              <li>Build the project:</li>
-              <ul>
-                <li>cmake --build build</li>
-              </ul>
-              <li>The Palettable executable should now be in the build directory.</li>
-            </ol>
-          </div>
-        </article>
+				<article id="palettable">
+					<h1 class="article-hdr">palettable/</h1>
+					<h2 class="article-subhdr">showcase</h2>
+					<div class="project-showcase">
+						<img src="images/Palettable_0.png"/>
+						<img src="images/Palettable_1.png"/>
+						<img src="images/Palettable_2.png"/>
+						<a target="_blank" href="https://github.com/natelwhite/Palettable">github</a>
+					</div>
+					<h2 id="palettable-background-dropper" class="article-subhdr dropper" onclick="mainDrop('palettable-background-dropper', 'palettable-background-drop-content')"><i class="fa fa-caret-right"></i>project background</h2>
+					<div id="palettable-background-drop-content" class="drop-content">
+						<ul class="article-text">
+							<li>I've done many iterations of this project. Originally in Python (Tkinter), then in HTML/CSS/JS (no libs), and now in C++ (Dear ImGui). I'm still tinkering with this project in between schoolwork, but I don't plan to work on it for much longer. The only reason I've done this project so many times is because I find it helpful to learn my way around a GUI framework/library.</li>
+							<li>My main interest in Dear ImGui is for a future 2d game engine. Considering the intuitive nature of Object Oriented Programming in a video game context, I tried to built this project with those principals in mind. As for how quickly I was able to learn my way around this library:</li>
+							<ul>
+								<li>A few hours to build the demo project that comes in the Dear ImGui <a href="***">repo</a>.</li>
+								<li>A day to build the functional requirements of the app:
+									<ul>
+										<li>display colors,</li>
+										<li>assign displayed number of rows/columns,</li>
+										<li>and edit colors).</li>
+									</ul>
+									<li>A day to separate the App, Palette, and Color components of the logic.</li>
+							</ul>
+							<li>Ultimately, I do not have the time nor capability of building a 2d engine without the aid of a more advanced library such as raylib. Regardless, I recognize that I'll never build one if I don't start poking around different libraries to see how they could be used for game engine development. </li>
+							<li>I appreciate the simplicity of Dear ImGui. I'm sure there are much more advanced things you can do with it, but it really is simple to get a window going and start adding widgets. The one qualm I have is the lack of a layout manager. I tried to use the docking branch of the repo, but I found it to be much more convoluted than I feel it should be. </li>
+						</ul>
+					</div>
+					<h2 id="palettable-build-dropper" class="article-subhdr dropper" onclick="mainDrop('palettable-build-dropper', 'palettable-build-drop-content')"><i class="fa fa-caret-right"></i>build instructions</h2>
+					<div id="palettable-build-drop-content" class="drop-content">
+						<ol class="article-text">
+							<li>Install SDL2 development libraries:</li>
+							<ul>
+								<li>Windows systems: see this step-by-step <a href="https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php">article</a>.</li>
+								<li>sudo apt install libsdl2-2.0-0</li>
+								<li>sudo dnf install SDL2-devel</li>
+								<li>sudo pac -S sdl2</li>
+							</ul>
+							<li>Clone the repo into a local directory:</li>
+							<ul>
+								<li>git clone https://github.com/natelwhite/Palettable.git</li>
+							</ul>
+							<li>Generate the Cmake build system:</li>
+							<ul>
+								<li>cmake -B build</li>
+							</ul>
+							<li>Build the project:</li>
+							<ul>
+								<li>cmake --build build</li>
+							</ul>
+							<li>The Palettable executable should now be in the build directory.</li>
+						</ol>
+					</div>
+				</article>
 
-        <article id="draw-machine">
-          <h1 class="article-hdr">draw-machine/</h1>
-          <h2 class="article-subhdr">showcase</h2>
-          <div class="project-showcase">
-            <img src="images/DrawMachine_0.png"/>
-            <img src="images/DrawMachine_1.gif"/>
-            <img src="images/DrawMachine_2.png"/>
-            <a target="_blank" href="https://github.com/natelwhite/DrawMachine">github</a>
-          </div>
-          <h2 id="draw-machine-background-dropper" class="article-subhdr dropper" onclick="mainDrop('draw-machine-background-dropper', 'draw-machine-background-drop-content')"><i class="fa fa-caret-right"></i>project background</h2>
-          <div id="draw-machine-background-drop-content" class="drop-content">
-            <ul class="article-text">
-              <li>After seeing a 3Blue1Brown (YouTube) video on the discrete fourier transform, I wanted to implmement it myself.</li>
-              <ul>
-                <li>I followed a CodingTrain (YouTube) video where he implemented a drawing machine in javascript using the algorithm.</li>
-                <li>I didn't want it to be too easy though, so I opted to use C++ and SDL2, much lower-level than javascript.</li>
-                <li>Here's some functionality I added that wasn't in the original</li>
-                <ol>
-                  <li>A single fourier series draws both x and y dimensions, rather than one for each axis.</li>
-                  <li>Move to a specified frame.</li>
-                  <li>Draw polygons with any number of sides rather than circles.</li>
-                  <li>Change color of lines, polygons, and background.</li>
-                  <li>Start/Stop animation at any time.</li>
-                  <li>Clear drawn path at any time.</li>
-                </ol>
-              </ul>
-            </ul>
-          </div>
-          <h2 id="draw-machine-build-dropper" class="article-subhdr dropper" onclick="mainDrop('draw-machine-build-dropper', 'draw-machine-build-drop-content')"><i class="fa fa-caret-right"></i>build instructions</h2>
-          <div id="draw-machine-build-drop-content" class="drop-content">
-            <ol class="article-text">
-              <li>Install SDL2 development libraries:</li>
-              <ul>
-                <li>Windows systems: see this step-by-step <a href="https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php">article</a>.</li>
-                <li>sudo apt install libsdl2-2.0-0</li>
-                <li>sudo dnf install SDL2-devel</li>
-                <li>sudo pac -S sdl2</li>
-              </ul>
-              <li>Clone the repo into a local directory:</li>
-              <ul>
-                <li>git clone https://github.com/natelwhite/DrawMachine.git</li>
-              </ul>
-              <li>Generate the Cmake build system:</li>
-              <ul>
-                <li>cmake -B build</li>
-              </ul>
-              <li>Build the project:</li>
-              <ul>
-                <li>cmake --build build</li>
-              </ul>
-              <li>The DrawMachine executable should now be in the build directory.</li>
-            </ol>
-          </div>
-        </article>
+				<article id="draw-machine">
+					<h1 class="article-hdr">draw-machine/</h1>
+					<h2 class="article-subhdr">showcase</h2>
+					<div class="project-showcase">
+						<img src="images/DrawMachine_0.png"/>
+						<img src="images/DrawMachine_1.gif"/>
+						<img src="images/DrawMachine_2.png"/>
+						<a target="_blank" href="https://github.com/natelwhite/DrawMachine">github</a>
+					</div>
+					<h2 id="draw-machine-background-dropper" class="article-subhdr dropper" onclick="mainDrop('draw-machine-background-dropper', 'draw-machine-background-drop-content')"><i class="fa fa-caret-right"></i>project background</h2>
+					<div id="draw-machine-background-drop-content" class="drop-content">
+						<ul class="article-text">
+							<li>After seeing a 3Blue1Brown (YouTube) video on the discrete fourier transform, I wanted to implmement it myself.</li>
+							<ul>
+								<li>I followed a CodingTrain (YouTube) video where he implemented a drawing machine in javascript using the algorithm.</li>
+								<li>I didn't want it to be too easy though, so I opted to use C++ and SDL2, much lower-level than javascript.</li>
+								<li>Here's some functionality I added that wasn't in the original</li>
+								<ol>
+									<li>A single fourier series draws both x and y dimensions, rather than one for each axis.</li>
+									<li>Move to a specified frame.</li>
+									<li>Draw polygons with any number of sides rather than circles.</li>
+									<li>Change color of lines, polygons, and background.</li>
+									<li>Start/Stop animation at any time.</li>
+									<li>Clear drawn path at any time.</li>
+								</ol>
+							</ul>
+						</ul>
+					</div>
+					<h2 id="draw-machine-build-dropper" class="article-subhdr dropper" onclick="mainDrop('draw-machine-build-dropper', 'draw-machine-build-drop-content')"><i class="fa fa-caret-right"></i>build instructions</h2>
+					<div id="draw-machine-build-drop-content" class="drop-content">
+						<ol class="article-text">
+							<li>Install SDL2 development libraries:</li>
+							<ul>
+								<li>Windows systems: see this step-by-step <a href="https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php">article</a>.</li>
+								<li>sudo apt install libsdl2-2.0-0</li>
+								<li>sudo dnf install SDL2-devel</li>
+								<li>sudo pac -S sdl2</li>
+							</ul>
+							<li>Clone the repo into a local directory:</li>
+							<ul>
+								<li>git clone https://github.com/natelwhite/DrawMachine.git</li>
+							</ul>
+							<li>Generate the Cmake build system:</li>
+							<ul>
+								<li>cmake -B build</li>
+							</ul>
+							<li>Build the project:</li>
+							<ul>
+								<li>cmake --build build</li>
+							</ul>
+							<li>The DrawMachine executable should now be in the build directory.</li>
+						</ol>
+					</div>
+				</article>
 
-        <article id="hellebore">
-          <h1 class="article-hdr">hellebore/</h1>
-          <h2 class="article-subhdr">showcase</h2>
-          <div class="project-showcase">
-            <img src="images/Hellebore_0.png"/>
-            <img src="images/Hellebore_1.gif"/>
-            <img src="images/Hellebore_2.png"/>
-            <a target="_blank" href="https://itch.io/jam/queer-winter-jam-2024-25/rate/3245651">itch.io</a>
-          </div>
-          <h2 id="hellebore-background-dropper" class="article-subhdr dropper" onclick="mainDrop('hellebore-background-dropper', 'hellebore-background-drop-content')"><i class="fa fa-caret-right"></i>project background</h2>
-          <div id="hellebore-background-drop-content" class="drop-content">
-            <ul class="article-text">
-				<li>For the holiday season (2025), I participated in a 6 week game jam with some students from my school. This was my first experience using Unreal Engine, specifically UE 4.27.2. Instead of programming, my role in the group was environment assets. The main elements of the game that I'm most proud of:</li>
-				<ol>
-					<li>Post processing cel-shader</li>
-					<li>Campfire shader</li>
-					<li>Tent shader</li>
-				</ol>
-				<li>Aside from the shaders though, I also had to model everything seen in the game:</li>
-				<ol>
-					<li>3 variations of pine trees</li>
-					<li>3 variations of spooky trees</li>
-					<li>Tent</li>
-					<li>Campfire</li>
-				</ol>
-				<li>Note: all movement in the environment (tents & campfire) is driven by a shader. It was mostly trial and error, but very similar to creating materials in Blender thanks to Unreal's node editor. Seeing as I was in school from beginning to end during this project, apart from a single week given for the holidays, I'm pretty proud of my contribution to this project.</li>
-            </ul>
-          </div>
-        </article>
-      </section>
-    </main>
-  </body>
+				<article id="hellebore">
+					<h1 class="article-hdr">hellebore/</h1>
+					<h2 class="article-subhdr">showcase</h2>
+					<div class="project-showcase">
+						<img src="images/Hellebore_0.png"/>
+						<img src="images/Hellebore_1.gif"/>
+						<img src="images/Hellebore_2.png"/>
+						<a target="_blank" href="https://itch.io/jam/queer-winter-jam-2024-25/rate/3245651">itch.io</a>
+					</div>
+					<h2 id="hellebore-background-dropper" class="article-subhdr dropper" onclick="mainDrop('hellebore-background-dropper', 'hellebore-background-drop-content')"><i class="fa fa-caret-right"></i>project background</h2>
+					<div id="hellebore-background-drop-content" class="drop-content">
+						<ul class="article-text">
+							<li>For the holiday season (2025), I participated in a 6 week game jam with some students from my school. This was my first experience using Unreal Engine, specifically UE 4.27.2. Instead of programming, my role in the group was environment assets. The main elements of the game that I'm most proud of:</li>
+							<ol>
+								<li>Post processing cel-shader</li>
+								<li>Campfire shader</li>
+								<li>Tent shader</li>
+							</ol>
+							<li>Aside from the shaders though, I also had to model everything seen in the game:</li>
+							<ol>
+								<li>3 variations of pine trees</li>
+								<li>3 variations of spooky trees</li>
+								<li>Tent</li>
+								<li>Campfire</li>
+							</ol>
+							<li>Note: all movement in the environment (tents & campfire) is driven by a shader. It was mostly trial and error, but very similar to creating materials in Blender thanks to Unreal's node editor. Seeing as I was in school from beginning to end during this project, apart from a single week given for the holidays, I'm pretty proud of my contribution to this project.</li>
+						</ul>
+					</div>
+				</article>
+			</section>
+		</main>
+	</body>
 </html>
