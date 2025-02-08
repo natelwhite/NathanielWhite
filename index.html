@@ -13,8 +13,6 @@
   <body>
     <script src="script.js"></script>
 
-    <main>
-    <h1 class="pageTitle">./NathanielWhite/</h1>
     <nav>
       <div class="row dropper" id="academic-history-dropper">
         <i class="fa fa-folder"></i>
@@ -44,6 +42,10 @@
           <i class="fa fa-file"></i>
           <a href="#draw-machine">draw-machine</a>
         </div>
+        <div class="row">
+          <i class="fa fa-file"></i>
+          <a href="#hellebore">hellebore</a>
+        </div>
       </div>
 
       <div class="row dropper" id="socials-dropper">
@@ -61,6 +63,9 @@
         </div>
       </div>
     </nav>
+
+    <main>
+    <h1 class="pageTitle">./NathanielWhite/</h1>
 
     <div id="socials-email-popup">
       <p>Copied natelwhite01@gmail.com to clipboard!</p>
@@ -233,6 +238,36 @@
               </ul>
               <li>The DrawMachine executable should now be in the build directory.</li>
             </ol>
+          </div>
+        </article>
+
+        <article id="hellebore">
+          <h1 class="article-hdr">hellebore/</h1>
+          <h2 class="article-subhdr">showcase</h2>
+          <div class="project-showcase">
+            <img src="images/Hellebore_0.png"/>
+            <img src="images/Hellebore_1.gif"/>
+            <img src="images/Hellebore_2.png"/>
+            <a target="_blank" href="https://itch.io/jam/queer-winter-jam-2024-25/rate/3245651">itch.io</a>
+          </div>
+          <h2 id="hellebore-background-dropper" class="article-subhdr dropper" onclick="mainDrop('hellebore-background-dropper', 'hellebore-background-drop-content')"><i class="fa fa-caret-right"></i>project background</h2>
+          <div id="hellebore-background-drop-content" class="drop-content">
+            <ul class="article-text">
+				<li>For the holiday season (2025), I participated in a 6 week game jam with some students from my school. This was my first experience using Unreal Engine, specifically UE 4.27.2. Instead of programming, my role in the group was environment assets. The main elements of the game that I'm most proud of:</li>
+				<ol>
+					<li>Post processing cel-shader</li>
+					<li>Campfire shader</li>
+					<li>Tent shader</li>
+				</ol>
+				<li>Aside from the shaders though, I also had to model everything seen in the game:</li>
+				<ol>
+					<li>3 variations of pine trees</li>
+					<li>3 variations of spooky trees</li>
+					<li>Tent</li>
+					<li>Campfire</li>
+				</ol>
+				<li>Note: all movement in the environment (tents & campfire) is driven by a shader. It was mostly trial and error, but very similar to creating materials in Blender thanks to Unreal's node editor. Seeing as I was in school from beginning to end during this project, apart from a single week given for the holidays, I'm pretty proud of my contribution to this project.</li>
+            </ul>
           </div>
         </article>
       </section>

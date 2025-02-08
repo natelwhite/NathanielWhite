@@ -1,13 +1,12 @@
 nav {
-  position: fixed;
-
-  display: grid;
-  grid-auto-flow: row;
-
-  width: 20vw;
-  top: 45vh;
-  left: 0;
-  overflow: hidden;
+	position: fixed;
+	display: grid;
+	grid-auto-flow: row;
+	width: 20vw;
+	top: 50vh;
+	transform: translateY(-50%);
+	align-content: center;
+	overflow: hidden;
 }
 
 nav .drop-content {
@@ -69,7 +68,7 @@ body {
 
 main {
   width: 60vw;
-  margin: 64px 20vw;
+  margin: 128px 20vw;
 }
 
 main .drop-content {
@@ -150,6 +149,7 @@ main .dropped-content {
     position: relative;
     width: 100%;
     top: 0;
+	transform: none;
   }
 
   nav .row {
