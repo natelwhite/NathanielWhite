@@ -157,31 +157,6 @@
 							<li>I appreciate the simplicity of Dear ImGui. I'm sure there are much more advanced things you can do with it, but it really is simple to get a window going and start adding widgets. The one qualm I have is the lack of a layout manager. I tried to use the docking branch of the repo, but I found it to be much more convoluted than I feel it should be. </li>
 						</ul>
 					</div>
-					<h2 id="palettable-build-dropper" class="article-subhdr dropper" onclick="mainDrop('palettable-build-dropper', 'palettable-build-drop-content')"><i class="fa fa-caret-down"></i>build instructions</h2>
-					<div id="palettable-build-drop-content" class="drop-content dropped-content">
-						<ol class="article-text">
-							<li>Install SDL2 development libraries:</li>
-							<ul>
-								<li>Windows systems: see this step-by-step <a href="https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php">article</a>.</li>
-								<li>sudo apt install libsdl2-2.0-0</li>
-								<li>sudo dnf install SDL2-devel</li>
-								<li>sudo pac -S sdl2</li>
-							</ul>
-							<li>Clone the repo into a local directory:</li>
-							<ul>
-								<li>git clone https://github.com/natelwhite/Palettable.git</li>
-							</ul>
-							<li>Generate the Cmake build system:</li>
-							<ul>
-								<li>cmake -B build</li>
-							</ul>
-							<li>Build the project:</li>
-							<ul>
-								<li>cmake --build build</li>
-							</ul>
-							<li>The Palettable executable should now be in the build directory.</li>
-						</ol>
-					</div>
 				</article>
 
 				<article id="draw-machine">
@@ -210,32 +185,8 @@
 									<li>Clear drawn path at any time.</li>
 								</ol>
 							</ul>
+							<li>I recently updated the project to build against SDL3 statically! It's a breeze to build the project for Windows or Linux!</li>
 						</ul>
-					</div>
-					<h2 id="draw-machine-build-dropper" class="article-subhdr dropper" onclick="mainDrop('draw-machine-build-dropper', 'draw-machine-build-drop-content')"><i class="fa fa-caret-down"></i>build instructions</h2>
-					<div id="draw-machine-build-drop-content" class="drop-content dropped-content">
-						<ol class="article-text">
-							<li>Install SDL2 development libraries:</li>
-							<ul>
-								<li>Windows systems: see this step-by-step <a href="https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php">article</a>.</li>
-								<li>sudo apt install libsdl2-2.0-0</li>
-								<li>sudo dnf install SDL2-devel</li>
-								<li>sudo pac -S sdl2</li>
-							</ul>
-							<li>Clone the repo into a local directory:</li>
-							<ul>
-								<li>git clone https://github.com/natelwhite/DrawMachine.git</li>
-							</ul>
-							<li>Generate the Cmake build system:</li>
-							<ul>
-								<li>cmake -B build</li>
-							</ul>
-							<li>Build the project:</li>
-							<ul>
-								<li>cmake --build build</li>
-							</ul>
-							<li>The DrawMachine executable should now be in the build directory.</li>
-						</ol>
 					</div>
 				</article>
 
