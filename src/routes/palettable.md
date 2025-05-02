@@ -1,0 +1,11 @@
+## project background
+- I've done many iterations of this project. Originally in Python (Tkinter), then in HTML/CSS/JS (no libs), and now in C++ (Dear ImGui). I'm still tinkering with this project in between schoolwork, but I don't plan to work on it for much longer. The only reason I've done this project so many times is because I find it helpful to learn my way around a GUI framework/library.
+- My main interest in Dear ImGui is for a future 2d game engine. Considering the intuitive nature of Object Oriented Programming in a video game context, I tried to built this project with those principals in mind. As for how quickly I was able to learn my way around this library:
+	- A few hours to build the demo project that comes in the Dear ImGui repo.
+	- A day to build the functional requirements of the app:
+		- display colors,
+		- assign displayed number of rows/columns,
+		- and edit colors).
+	- A day to separate the App, Palette, and Color components of the logic.
+- Ultimately, I do not have the time nor capability of building a 2d engine without the aid of a more advanced library such as raylib. Regardless, I recognize that I'll never build one if I don't start poking around different libraries to see how they could be used for game engine development.
+- I appreciate the simplicity of Dear ImGui. I'm sure there are much more advanced things you can do with it, but it really is simple to get a window going and start adding widgets. The one qualm I have is the lack of a layout manager. I tried to use the docking branch of the repo, but I found it to be much more convoluted than I feel it should be.

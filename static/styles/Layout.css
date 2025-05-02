@@ -1,0 +1,107 @@
+body {
+	margin: 0;
+	padding: 32px 0;
+}
+article {
+	padding: 0 calc(var(--indent) * 2);
+}
+article h1:not(.custom) {
+	margin: 0 calc(var(--indent) * -2);
+	line-height: 2;
+	padding-left: calc(var(--indent) * 3);
+}
+article h2 {
+	margin: 0 calc(var(--indent) * -2) 0 0;
+	line-height: 2;
+	padding-left: var(--indent);
+}
+article p {
+	padding: 0 var(--indent);
+	margin: 8px var(--indent);
+}
+article ul {
+	padding: 0 var(--indent);
+	margin: 16px var(--indent);
+}
+article ol {
+	padding: 0 var(--indent);
+	margin: 16px var(--indent);
+}
+
+article table {
+	color: var(--paragraph);
+	line-height: 2;
+	min-width: 40%;
+	max-width: 80%;
+	margin: auto;
+}
+td, th {
+	padding: 0 8px;
+}
+:root {
+	--indent: 2vw;
+}
+
+@media screen and (min-device-width: 601px) and (max-device-width: 1200px) {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--indent: 4px;
+	}
+	article {
+		padding: 0 16px;
+		line-height: 1.5;
+	}
+	article h1:not(.custom) {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	article h2 {
+		margin: 0 0 0 0;
+		padding: 0;
+		text-align: center;
+	}
+	article ul {
+		margin: 8px;
+	}
+}
+
+@media screen and (max-device-width: 600px) {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--indent: 0px;
+	}
+	article {
+		padding: 0 16px;
+		line-height: 1.5;
+	}
+	article h1:not(.custom) {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	article h2 {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	article table {
+		min-width:100%;
+		max-width:100%;
+		width: 100%;
+		margin: 0;
+		line-height: 1.5;
+	}
+	td, th {
+		padding: 0 2px;
+	}
+	article ul {
+		margin: 8px;
+	}
+}

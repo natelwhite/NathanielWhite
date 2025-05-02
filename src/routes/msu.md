@@ -1,0 +1,5 @@
+I attended MSU for two and a half years. Most of that time was spent on a music education degree with tuba as my primary instrument. While I didn't finish the degree, most of my first two years were spent on music courses, rather than general education requirements (ask my advisor, I still don't know why). In those courses, I learned how to play trumpet, french horn, baritone, and piano as well as how to use music theory to play sheet music more effectively. In summer 2021, I traveled to over ten states performing the Troopers Drum and Bugle Corps - check out this <a target="_blank" href="https://www.youtube.com/watch?v=HBmj38G8E9o">video</a>!
+
+After the revelation that performing arts are not for me (performance anxiety), I changed to a bachelor's in computer science. My time at this university post major change was short lived due to all the challenges that Covid brought to the school. By fall of 2022, I moved on to Southern New Hampshire University.
+
+I have many great memories from this institution. Playing in massive performance halls, hearing the most inspiring melodies. Truly, words do not suffice.

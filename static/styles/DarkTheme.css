@@ -1,0 +1,44 @@
+body {
+	background-color: var(--black);
+}
+h1:not(.pageTitle):not(.section-hdr) {
+	font-size: 14pt;
+	color: var(--header);
+	background-color: var(--light-grey);
+}
+h2 {
+	font-size: 14pt;
+	color: var(--subheader);
+	background-color: var(--grey);
+}
+p {
+	color: var(--paragraph);
+	background-color: var(--black);
+}
+ul {
+	color: var(--paragraph);
+	background-color: var(--black);
+}
+table {
+	background-color: var(--grey);
+}
+td, th {
+	outline: solid 1px var(--light-grey);
+}
+:root {
+	/* Background Colors */
+	--black: #111;
+	--grey: #222;
+	--light-grey: #333;
+
+	/* Use sparingly */
+	--orange: #A9675B;
+
+	/* Text Colors */
+	--header: #999;
+	--subheader: #777;
+	--paragraph: #808080;
+	--indent: 2vw;
+
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
