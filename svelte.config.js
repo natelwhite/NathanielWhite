@@ -1,7 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
 const config = {
   kit: {
-	appDir: 'app',
+	appDir: 'build',
     adapter: adapter({
       pages: 'build',
       assets: 'build',
@@ -10,7 +10,7 @@ const config = {
       strict: true
     }),
 	paths: {
-		base: "https://natewhite.site/"
+		base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 	}
   }
 };
