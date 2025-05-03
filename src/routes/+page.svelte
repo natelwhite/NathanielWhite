@@ -83,17 +83,16 @@ import palettableMD from './palettable.md?raw';
 <style>
 main {
 	background-color: var(--black);
-	width: 60vw;
-	margin: 0 20vw;
+	margin: 0 0 0 512px;
 
-	border-right: var(--orange) 2px solid;
+	/*border-right: var(--orange) 2px solid;*/
 	border-left: var(--orange) 2px solid;
 	line-height: 1.5;
 }
 nav {
 	position: fixed;
 	display: grid;
-	width: 20vw;
+	width: 512px;
 	top: 50vh;
 	transform: translateY(-50%);
 	overflow: hidden;

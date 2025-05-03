@@ -30,7 +30,7 @@ button {
 	width: 100%;
 	margin: 0;
 	padding: 0 8px;
-	line-height: 2;
+	line-height: 3;
 	font-size: 12pt;
 
 	text-align: left;
