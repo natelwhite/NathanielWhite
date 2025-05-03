@@ -1,1 +1,1 @@
-Sveltekit that uses the static adapter to produce my [https://natewhite.site](site)
+Sveltekit that uses the static adapter to produce my [site](https://natewhite.site)
