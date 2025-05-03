@@ -18,9 +18,9 @@
 
 <button onclick={click}>
 	{#if copied}
-		<Fa style="color: var(--orange);" icon={faClipboardCheck}/>
+		<Fa style="margin:0 8px; color: var(--orange);" icon={faClipboardCheck}/>
 	{:else}
-		<Fa icon={faClipboard}/>
+		<Fa style="margin:0 8px;" icon={faClipboard}/>
 	{/if}
 	{text}
 </button>
@@ -30,7 +30,7 @@ button {
 	width: 100%;
 	margin: 0;
 	padding: 0 8px;
-	line-height: 3;
+	line-height: 2;
 	font-size: 12pt;
 
 	text-align: left;
@@ -46,10 +46,15 @@ button:hover {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-device-width: 601px) and (max-device-width: 1200px) {
 	button {
 		border: none;
-		line-height: 3;
+	}
+}
+@media screen and (max-device-width: 600px) {
+	button {
+		border: none;
+		text-align: center;
 	}
 }
 </style>

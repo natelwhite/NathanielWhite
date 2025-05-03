@@ -119,7 +119,7 @@ section {
   padding-left: calc(var(--indent) * 2);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-device-width: 601px) and (max-device-width: 1200px) {
 	main {
 		width: 100vw;
 		margin: 0;
@@ -133,7 +133,18 @@ section {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-device-width: 600px) {
+	main {
+		width: 100vw;
+		margin: 0;
+		border: none;
+	}
+	nav {
+		position: relative;
+		width: 100vw;
+		top: 0;
+		transform: none;
+	}
 	.pageTitle {
 		text-align: center;
 	}

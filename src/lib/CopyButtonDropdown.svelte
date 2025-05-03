@@ -46,7 +46,7 @@ button {
 	width: 100%;
 	margin: 0;
 	padding: 0 8px;
-	line-height: 2;
+	line-height: 3;
 	font-size: 12pt;
 
 	text-align: left;
@@ -79,10 +79,21 @@ ul {
 .dropped ul {
 	display: grid;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-device-width: 601px) and (max-device-width: 1200px) {
 	button {
 		border: none;
 		line-height: 3;
+	}
+}
+@media screen and (max-device-width: 600px) {
+	button {
+		text-align: center;
+		border: none;
+		line-height: 3;
+		background-color: var(--grey);
+	}
+	button:hover {
+		background-color: var(--light-grey);
 	}
 }
 </style>

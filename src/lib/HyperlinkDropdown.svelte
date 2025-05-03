@@ -41,7 +41,7 @@ button {
 	width: 100%;
 	margin: 0;
 	padding: 0 8px;
-	line-height: 2;
+	line-height: 3;
 	font-size: 12pt;
 
 	text-align: left;
@@ -78,7 +78,7 @@ li a {
 	padding: 0 8px;
 	display: block;
 	font-size: 12pt;
-	line-height: 3;
+	line-height: 2;
 
 	color: var(--paragraph);
 }
@@ -88,12 +88,27 @@ a:hover {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-device-width: 601px) and (max-device-width: 1200px) {
 	button {
 		border: none;
 	}
 	li a {
 		border: none;
+	}
+}
+
+@media screen and (max-device-width: 600px) {
+	button {
+		border: none;
+		text-align: center;
+		background-color: var(--grey);
+	}
+	button:hover {
+		background-color: var(--light-grey);
+	}
+	li a {
+		border: none;
+		text-align: center;
 	}
 }
 </style>
