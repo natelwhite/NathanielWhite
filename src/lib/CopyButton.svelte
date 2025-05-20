@@ -42,7 +42,7 @@ button {
 }
 button:hover {
 	background-color: var(--grey);
-	color: var(--header);
+	color: var(--orange);
 	cursor: pointer;
 }
 

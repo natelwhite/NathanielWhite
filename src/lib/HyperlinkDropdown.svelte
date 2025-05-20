@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Fa from 'svelte-fa';
-	import { faFolder, faFolderOpen, faFile } from '@fortawesome/free-solid-svg-icons';
+	import { faFolder, faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 	let { 
 		dropperText,
 		contents
@@ -13,31 +13,35 @@
 		html: string;
 	};
 	let dropped: boolean = $state(false);
-	let classState: string = $derived(dropped ? "dropped" : "");
 </script>
 
-
-<div class={classState}>
-	<button onclick={() => {dropped = !dropped}}>
+<details ontoggle={() => {
+	dropped = !dropped;
+	resizeMain();
+}}>
+	<summary>
 		{#if dropped}
 			<Fa icon={faFolderOpen} />
 		{:else}
 			<Fa icon={faFolder} />
 		{/if}
-		{ dropperText }
-	</button>
-	<ul>
+		{dropperText}
+	</summary>
+	<p>
 		{#each contents as content}
-			<li><a href={content.href}><Fa style="margin:0 8px" icon={faFile}/>{content.html}</a></li>
+			<a href={content.href}>{content.html}</a>
 		{/each}
-	</ul>
-</div>
+	</p>
+</details>
 
 <style>
-div {
+details {
 	background-color: var(--black);
 }
-button {
+details > summary::marker {
+	content: "";
+}
+summary {
 	width: 100%;
 	margin: 0;
 	padding: 0 8px;
@@ -51,29 +55,26 @@ button {
 	border-radius: 0;
 	border-bottom: 1px solid var(--orange);
 }
-.dropped button {
+details:open summary {
 	color: var(--orange);
 }
 
-button:hover {
+summary:hover {
 	background-color: var(--grey);
 	color: var(--header);
 	cursor: pointer;
 }
 
-ul {
-	display: none;
+p {
+	display: grid;
 	margin: 0 0 0 var(--indent);
 	padding: 0;
 
 	list-style-type: none;
 	background-color: var(--black);
 }
-.dropped ul {
-	display: grid;
-}
 
-li a {
+a {
 	border-bottom: 1px solid var(--paragraph);
 	padding: 0 8px;
 	display: block;
@@ -82,31 +83,36 @@ li a {
 
 	color: var(--paragraph);
 }
+a::before {
+	content: "\f15b";
+	font-family: FontAwesome;
+	padding: 0 8px;
+}
 a:hover {
 	background-color: var(--grey);
-	color: var(--header);
+	color: var(--orange);
 	cursor: pointer;
 }
 
 @media screen and (min-device-width: 601px) and (max-device-width: 1200px) {
-	button {
+	summary {
 		border: none;
 	}
-	li a {
+	a {
 		border: none;
 	}
 }
 
 @media screen and (max-device-width: 600px) {
-	button {
+	summary {
 		border: none;
 		text-align: center;
 		background-color: var(--grey);
 	}
-	button:hover {
+	summary:hover {
 		background-color: var(--light-grey);
 	}
-	li a {
+	a {
 		border: none;
 		text-align: center;
 	}

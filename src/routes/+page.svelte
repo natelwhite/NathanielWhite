@@ -1,4 +1,5 @@
 <script lang="ts">
+// custom components
 import HyperlinkDropdown from '$lib/HyperlinkDropdown.svelte'
 import CopyButtonDropdown from '$lib/CopyButtonDropdown.svelte'
 import Article from '$lib/Article.svelte'
@@ -13,6 +14,11 @@ import furthingsMD from './furthings.md?raw';
 import drawMachineMD from './drawMachine.md?raw';
 import helleboreMD from './hellebore.md?raw';
 import palettableMD from './palettable.md?raw';
+
+import { onMount } from 'svelte';
+onMount(() => {
+	resizeMain();
+});
 </script>
 
 <nav>
@@ -83,19 +89,16 @@ import palettableMD from './palettable.md?raw';
 <style>
 main {
 	background-color: var(--black);
-	margin: 0 0 0 512px;
 
-	/*border-right: var(--orange) 2px solid;*/
 	border-left: var(--orange) 2px solid;
 	line-height: 1.5;
 }
 nav {
 	position: fixed;
 	display: grid;
-	width: 512px;
-	top: 50vh;
-	transform: translateY(-50%);
-	overflow: hidden;
+	width: max-content;
+	height: 100%;
+	align-content: center;
 }
 
 .pageTitle {

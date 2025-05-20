@@ -14,35 +14,35 @@
 		text: string;
 	};
 	let dropped: boolean = $state(false);
-	let classState: string = $derived(dropped ? "dropped" : "");
 </script>
 
-
-<div class={classState}>
-	<button onclick={() => {dropped = !dropped}}>
+<details ontoggle={() => {
+	dropped = !dropped
+	resizeMain();
+}}>
+	<summary>
 		{#if dropped}
 			<Fa icon={faFolderOpen} />
 		{:else}
 			<Fa icon={faFolder} />
 		{/if}
-		{ dropperText }
-	</button>
-	<ul>
-		{#each buttons as button}
-			<li>
-			<CopyButton
-				text={button.text}
-				copyValue={button.copyValue}/>
-			</li>
-		{/each}
-	</ul>
-</div>
+		{dropperText}
+	</summary>
+	<p>
+	{#each buttons as button}
+		<CopyButton text={button.text} copyValue={button.copyValue}/>
+	{/each}
+	</p>
+</details>
 
 <style>
-div {
+details {
 	background-color: var(--black);
 }
-button {
+details > summary::marker {
+	content: "";
+}
+summary {
 	width: 100%;
 	margin: 0;
 	padding: 0 8px;
@@ -54,45 +54,40 @@ button {
 	background-color: var(--black);
 	border: none;
 	border-radius: 0;
-}
-button {
 	border-bottom: 1px solid var(--orange);
 }
-.dropped button {
+details:open summary {
 	color: var(--orange);
 }
 
-button:hover {
+summary:hover {
 	background-color: var(--grey);
 	color: var(--header);
 	cursor: pointer;
 }
 
-ul {
-	display: none;
+p {
+	display: grid;
 	margin: 0 0 0 var(--indent);
 	padding: 0;
 
 	list-style-type: none;
 	background-color: var(--black);
 }
-.dropped ul {
-	display: grid;
-}
 @media screen and (min-device-width: 601px) and (max-device-width: 1200px) {
-	button {
+	summary {
 		border: none;
 		line-height: 3;
 	}
 }
 @media screen and (max-device-width: 600px) {
-	button {
+	summary {
 		text-align: center;
 		border: none;
 		line-height: 3;
 		background-color: var(--grey);
 	}
-	button:hover {
+	summary:hover {
 		background-color: var(--light-grey);
 	}
 }
