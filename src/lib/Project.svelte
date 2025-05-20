@@ -49,22 +49,20 @@
 }
 img:not(.activeImage) {
 	width: 90%;
-	padding: 8px 5%;
+	padding: 5%;
 }
 .showcase-previews {
+	width: 80%;
+	margin: 0 10%;
 	display: grid;
 	grid-auto-flow: column;
 	grid-auto-columns: 1fr;
 	align-items: center;
-	column-gap: 16px;
+	column-gap: 2px;
 	background-color: var(--grey);
 }
 .showcase-previews img {
-	object-fit:scale-down;
-	max-height: 128px;
-	min-height: 64px;
-	max-width: 256px;
-	min-width: 64px;
+	object-fit: scale-down;
 }
 .showcase-previews img:hover {
 	background-color: var(--light-grey);
