@@ -14,6 +14,7 @@
 		text: string;
 	};
 	let dropped: boolean = $state(false);
+	import { resizeMain } from '$lib/index.ts';
 </script>
 
 <details ontoggle={() => {

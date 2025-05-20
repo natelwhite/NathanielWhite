@@ -15,6 +15,7 @@ import drawMachineMD from './drawMachine.md?raw';
 import helleboreMD from './hellebore.md?raw';
 import palettableMD from './palettable.md?raw';
 
+import { resizeMain } from '$lib/index.ts';
 import { onMount } from 'svelte';
 onMount(() => {
 	resizeMain();
