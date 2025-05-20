@@ -126,7 +126,7 @@ section {
 @media screen and (min-device-width: 601px) and (max-device-width: 1200px) {
 	main {
 		width: 100vw;
-		margin: 0;
+		margin-left: 0 !important;
 		border: none;
 	}
 	nav {
@@ -140,7 +140,7 @@ section {
 @media screen and (max-device-width: 600px) {
 	main {
 		width: 100vw;
-		margin: 0;
+		margin-left: 0 !important;
 		border: none;
 	}
 	nav {
