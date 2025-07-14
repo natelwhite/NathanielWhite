@@ -1,4 +1,4 @@
-I currently attend SNHU pursuing a Computer Science Bachelor's with a concentration in project management. At the time of writing (05/01/25), my current GPA is 3.582 with graduation within 12 months.
+I currently attend SNHU pursuing a Computer Science Bachelor's with a concentration in project management. At the time of writing (07/14/25), my current GPA is 3.634 with graduation within 10 months.
 
 ## Course Completion
 
@@ -16,8 +16,8 @@ Software:
 | <i style="color:var(--orange);" class="fa fa-check-circle"/> | Software Development Lifecycle | CS250 |
 | <i style="color:var(--orange);" class="fa fa-check-circle"/> | Software Security | CS305 |
 | <i style="color:var(--orange);" class="fa fa-check-circle"/> | Software Test, Automation and Quality Assurance | CS320 |
-| <i class="fa fa-spinner"/> | Computational Graphics and Visualization | CS330 |
-| <i class="fa fa-spinner"/> | Client/Server Development | CS340 |
+| <i style="color:var(--orange);" class="fa fa-check-circle"/> | Computational Graphics and Visualization | CS330 |
+| <i style="color:var(--orange);" class="fa fa-check-circle"/> | Client/Server Development | CS340 |
 | <i class="fa fa-times-circle"/> | Mobile Architecture & Programming | CS360 |
 | <i class="fa fa-times-circle"/> | Current/Emerging Trends in CS | CS370 |
 | <i class="fa fa-times-circle"/> | Full Stack Development 1 | CS465 |
@@ -27,8 +27,8 @@ Project Management:
 | -: | :--: | :- |
 | <i style="color:var(--orange);" class="fa fa-check-circle"/> | Managing and Leading in Business | BUS210 |
 | <i style="color:var(--orange);" class="fa fa-check-circle"/> | Project Management | QSO340 |
-| <i class="fa fa-times-circle"/> | Resource Estimate and Schedule | QSO355 |
-| <i class="fa fa-times-circle"/> | Topics in Project Management | QSO440 |
+| <i class="fa fa-spinner"/> | Resource Estimate and Schedule | QSO355 |
+| <i class="fa fa-spinner"/> | Topics in Project Management | QSO440 |
 
 Math:
 | Completion | Course Title | Course Code |
