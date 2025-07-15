@@ -8,7 +8,6 @@ Software:
 | <i style="color:var(--orange);" class="fa fa-check-circle"/> | Introduction to Scripting | IT140 |
 | <i style="color:var(--orange);" class="fa fa-check-circle"/> | Foundations in Application development | IT145 |
 | <i style="color:var(--orange);" class="fa fa-check-circle"/> | Programming Languages | CS210 |
-| <i style="color:var(--orange);" class="fa fa-check-circle"/> | Data Structures and Algorithms | CS218 |
 | <i style="color:var(--orange);" class="fa fa-check-circle"/> | Introduction to Database Environments | DAD220 |
 | <i style="color:var(--orange);" class="fa fa-check-circle"/> | Operating Platforms | CS230 |
 | <i style="color:var(--orange);" class="fa fa-check-circle"/> | System Analysis and Design | CS255 |
